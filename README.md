@@ -1,5 +1,5 @@
 # crutch-ext
-Костыльные навороты на тикетницу WHCMS
+Костыльные навороты на тикетницу WHMСS
 
 ![alt text](https://downloader.disk.yandex.ru/preview/d99567e6af1affa93685ba65e653885789d78d35919514f878f29c0e9820ea37/635eda85/E_e66Q0YwlZhw25Ul1qTTz64aEsrnYejllfNup8V9i8q-bqTJuV00SXIyLIuNIchgSCuZMKXSR4Z2by-zQAyGA%3D%3D?uid=0&filename=2022-10-30_21-11-06.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048)
 

@@ -1,0 +1,193 @@
+@import './colors';
+
+.my-ticket{
+  background: #6f9d37;
+  padding: 0px 19px;
+  color: #182d00 !important;
+}
+
+
+.toolbar{
+	box-sizing: border-box !important;
+	width: 100%;
+	padding: 10px;
+	background: white;
+	position: fixed;
+	bottom: 0px;
+	border-top: 4px #e2e7e9 solid;
+	box-shadow: 2px -10px 10px #21212114;
+	z-index: 9999;
+	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    display:none;
+}
+
+.toolbar a {
+	cursor: pointer;
+}
+
+.toolbar__links-wrapper button {
+	position: relative;
+    background: linear-gradient(180deg, white, #f7f7f7);
+    border: 1px solid #e2e7e9;
+    padding: 5px 12px 5px 33px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #212121;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 1s all;
+}
+
+.toolbar__links-wrapper button:hover{
+	background: linear-gradient(180deg, white, #e8e8e8);
+}
+
+.toolbar__button-await:before{
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('https://img.icons8.com/ios-filled/344/iphone-spinner--v1.png') center center no-repeat;
+	position: absolute;
+	background-size: 16px 16px;
+	left: 9px;
+	top: 6px;
+}
+
+.toolbar__button-progress:before{
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('https://cdn-icons-png.flaticon.com/512/497/497421.png') center center no-repeat;
+	position: absolute;
+	background-size: 16px 16px;
+	left: 9px;
+	top: 6px;
+}
+
+.toolbar__links-wrapper button:nth-child(2){
+	margin-right: 0px;
+}
+
+.toggler-tag {
+	padding: 15px 0px 15px 0px;
+}
+
+.toggler-tag a {
+	cursor: pointer;
+	margin-right: 10px;
+	color: $greySnow;
+}
+
+.toggler-tag__tab_active {
+	background: $accentBlue;
+}
+
+.tagger-alert {
+	box-sizing: border-box;
+    position: fixed;
+    background: #ffffff;
+    right: 25px;
+    top: 25px;
+    transform: translateX(calc(100% + 25px));
+    padding: 8px 31px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px rgb(0 0 0 / 40%);
+    border-bottom: 5px solid;
+    font-size: 12px;
+    /*text-transform: uppercase;*/
+    transition: 0.3s all;
+    text-align: right;
+    z-index: 0;
+}
+
+.tagger-alert_success {
+	border-color: #73c163;
+	color: #73c163;
+}
+
+.tagger-alert_warning {
+	border-color: #DACD83;
+	color: #DACD83;
+}
+
+.tagger-alert_error {
+	border-color: red;
+	color: red;
+}
+
+.tagger-alert_active {
+	transform: translateX(0%);
+}
+
+.topbar_active {
+	background: black !important;
+}
+
+/*Стили карточки услуги*/
+
+.contentarea__links {
+	background: #1a4d80;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contentarea__links span {
+	color: white;
+}
+
+.contentarea__links button {
+	background: #2162A3;
+    padding: 6px 17px;
+    /*border: 1px solid white;*/
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+    /*transition: .05s all;*/
+    color: white;
+    /*text-transform: uppercase;*/
+    font-weight: 600;
+}
+
+.contentarea__links button:hover {
+	cursor: pointer;
+	background: #E9F0FE;
+	color: black;
+}
+
+.modal {
+	position: fixed;
+	width: 550px;
+	min-height: 250px;
+	background: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px;
+    z-index: 99999;
+    border-radius: 12px;
+    box-shadow: 0px 2px 27px rgb(0 0 0 / 30%);
+    box-sizing: border-box;
+}
+
+.modal__body {
+	margin-top: 35px;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgb(0 0 0 / 24%);
+	top: 0;
+}
+
+.textarea {
+	width: 500px;
+	height: 500px;
+}

@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+@import './tags';
+@import './colors';
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  a {
+    color: $link;
+  }
+  background: $body !important;
+  .topbar {
+    background: $body;
+    a {
+      color: $greySnow;
+    }
+  }
+  .header {
+    background: $grey700;
+    .stats {
+      a {
+        color: $greySnow;
+      }
+    }
+    .logo {
+      top: 50px;
+      left: 33px;
+      img {
+        width: 190px;
+      }
+    }
+  }
+  .intellisearch {
+    #intellisearchval {
+      background-color: $grey600;
+      border: 1px solid $grey500; 
+      color: $greySnow;
+    }
+  }
+  .navigation {
+    background: $grey700;
+    border: none;
+    ul {
+      li {
+        color: $greySnow;
+        background-color: $grey600;
+        a {
+          color: $greySnow;
+        }
+        ul {
+          background-color: $grey600;
+          border-color: $grey700;
+          li {
+            background-color: $grey500;
+            border-color: $grey700;
+          }
+        }
+      }
+    }
+  }
+  .contentarea {
+    position: relative;
+    background: $grey700;
+    border: 1px solid $grey600;
+    color: #bec2b8;
+    h2 {
+      color: $greySnow;
+      a {
+        color: #e05454;
+      }
+    }
+    table.form td.fieldlabel {
+      // display: none;
+      background: $fieldlabel-bg;
+      color: $grey100;
+      border-radius: 3px;
+      width: 12%;
+    }
+    table.form td.fieldarea {
+      background: $grey600;
+      color: $greySnow;
+      border-radius: 3px;
+      padding: 4px 5px 4px 5px;
+    }
+    select {
+      border: 1px solid #141414;
+      padding: 2px;
+      border-radius: 5px;
+      background: #202020;
+      color: $greySnow;
+    }
+    input {
+      padding: 3px 10px;
+      background: #202020;
+      border: 1px solid #141414;
+      color: $greySnow;
+    }
+    table.form {
+      background: none;
+      border: none;
+    }
+    #replymessage {
+      box-sizing: border-box;
+      background: #282828;
+      border: none;
+      border-radius: 7px;
+      padding: 15px;
+      color: $greySnow;
+      border: 1px solid #5a5a5a;
+    }
+    #ticketreplies {
+      .reply, .staffreply {
+        border: 1px solid $grey400;
+        background-color: $grey600;
+        color: $greySnow;
+        border-radius: 15px;
+        box-shadow: none;
+        .rightcol {
+          border-left: 1px solid #5a5a5a;
+        }
+        a {
+          color: #21a0c7;
+        }
+      }
+      .submitter {
+        .name, a {
+          color: $greySnow;
+        }
+      }
+      .staffreply {
+        background-color: #27271d;
+        border: 1px solid #33331b;
+        .rightcol {
+          border-left: 1px solid #33331b;
+        }
+      }
+    }
+    #ticketreplies .message {
+      color: $greySnow;
+    }
+    #tab_content {
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    #tabs {
+      margin-bottom: 15px;
+      ul {
+        box-sizing: border-box;
+        height: auto;
+        display: flex;
+        width: 100%;
+        padding: 5px;
+        background-color: #2c2c2c;
+        border-bottom: 0;
+        border-radius: 5px;
+        border: 1px solid #3d3d3d;
+        .tabselected {
+          a {
+            font-weight: inherit;
+            background: rgb(44, 44, 44);
+            &:hover {
+              background-color: none;
+              border: none;
+              border-bottom: none;
+              color: $greySnow;
+              font-weight: inherit;
+            }
+          }
+        }
+        li {
+          a {
+            border: none;
+            background: #3c3c3c;
+            color: $greySnow;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    #projectscont + span {
+      position: absolute;
+      right: 0;
+      margin-top: 9px;
+      margin-left: 5px;
+      a {
+        color: $greySnow;
+      }
+    }
+  }
+  #sidebar {
+    background-color: $grey700;
+    border: 1px solid $grey600;
+    #ticketTags {
+      background: $grey600;
+      color: $greySnow;
+      border: none;
+    }
+    .tagcloud {
+      background: #141414;
+      border: 1px solid #141414;
+      color: $greySnow;
+    }
+    select {
+      border: 1px solid #141414;
+      padding: 2px;
+      border-radius: 5px;
+      background: #202020;
+      color: $greySnow;
+    }
+    input {
+      padding: 3px 10px;
+      background: #202020;
+      border: 1px solid #141414;
+      color: $greySnow;
+    }
+    span.header {
+      background-color: $grey600;
+      border: 1px solid $grey500;
+      display: flex;
+      align-items: center;
+      color: $greySnow;
+      padding: 3px 6px 3px 10px;
+      border-radius: 3px;
+      margin-bottom: 7px;
+    }
+    ul.menu li a {
+      color: $greySnow;
+    }
+    .ticketheader {
+      color: #707070;
+    } 
+    .ticketinfo {
+      margin-bottom: 7px;
+      border: none;
+      background: none;
+    }
+  }
+  .tablebg {
+    box-sizing: border-box;
+    padding: 10px;
+    background: #282828;
+    border-radius: 7px;
+  }
+  table.datatable {
+    tr {
+      &:hover td {
+        background-color: #2d3ed2;
+      }
+    }
+    tr.rowhighlight {
+        td {
+          background-color: #2d3ed2;
+        }
+    }
+    th {
+      background-color: $grey600;
+    }
+    td {
+      background: none;
+      border-bottom: none;
+      margin-bottom: 15px;
+      a {
+        color: #bec2b8;
+      }
+    }
+  }
+  #clienttabs {
+    margin-bottom: 15px;
+    ul {
+      box-sizing: border-box;
+      height: auto;
+      display: flex;
+      width: 100%;
+      padding: 5px;
+      background-color: #2c2c2c;
+      border-bottom: 0;
+      border-radius: 5px;
+      border: 1px solid #3d3d3d;
+      .tabselected {
+        a {
+          font-weight: inherit;
+          background: rgb(44, 44, 44);
+          &:hover {
+            background-color: none;
+            border: none;
+            border-bottom: none;
+            color: $greySnow;
+            font-weight: inherit;
+          }
+        }
+      }
+      li {
+        a {
+          border: none;
+          background: #3c3c3c;
+          color: $greySnow;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+    textarea[name="assignedips"] {
+      width: 38%;
+      min-height: 200px;
+      background: #202020;
+      border: 1px solid #141414;
+      color: $greySnow;
+    }
+    .ticketstaffnotes {
+      background-color: #393909;
+      border: 1px dashed #616113;
+      a {
+        color: #a5a545;
+      }
+      table {
+        border-bottom: 1px dashed #616113;
+        td {
+          color: #7f7f3a;
+        }
+      }
+    }
+    .contexthelp {
+      display: none;
+    }
+    #clientsimportantnotes {
+      background: $grey600;
+      border: none;
+    }
+}

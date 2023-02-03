@@ -7,7 +7,7 @@
 
 1) Пометка тикетов в которых вы давали ответ. 
 
-![alt text](https://downloader.disk.yandex.ru/preview/825d1622e9368b01c8084fbcc692df499658a77a2fa3975eff4c2fbb3cedbb91/635edc65/dny5eZRxqmf4-gFw70cFQHoHGY5_jf61j94gGgh2VKvOIQBJzNcSOVsXlVRnbTsZzr9QHNelzQdiwlGHeES1hA%3D%3D?uid=0&filename=2022-10-30_21-19-07.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048)
+![alt text](https://panteleev.su/stock/cruth-3.png)
 
 Убрать отметку можно на странице тикета в тоглере:
 

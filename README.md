@@ -11,7 +11,7 @@
 
 Убрать отметку можно на странице тикета в тоглере:
 
-![alt text](https://panteleev.su/stock/cruth-4.png)
+![alt text](https://panteleev.su/stock/cruth-5.png)
 
 2) Переход в панель по кнопке (В ISPManager производится попытка авторизации по паролю, указанному в карточке услуги)
 

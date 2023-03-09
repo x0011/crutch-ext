@@ -1,4 +1,21 @@
+import { topBar } from "../views/main";
+
 initLS();
+// localStorage.setItem('theme', 0);
+
+const currentTheme = localStorage.getItem('theme');
+console.log('Проверка');
+currentTheme 
+  ? document.body.dataset.theme = currentTheme
+  : document.body.dataset.theme = 'light'
+
+// (() => {
+//   const currentTheme = localStorage.getItem('theme');
+//   console.log('Проверка');
+//   currentTheme 
+//     ? document.body.dataset.theme = currentTheme
+//     : document.body.dataset.theme = 'light'
+// })();
 
 if (checkPage('supporttickets.php')){
   updateTicketsView();
@@ -429,3 +446,29 @@ function showModal(title, bodyElem){
   });
   
 }
+
+// true - темная, false - светлая 
+const changeTheme = () => {
+  const currentTheme = localStorage.getItem('theme');
+  const { dataset } = document.body;
+  if (currentTheme !== null) {
+    console.log(currentTheme);
+    if (currentTheme === 'light') {
+      dataset.theme = 'dark'
+      localStorage.setItem('theme', 'dark');
+    }else {
+      dataset.theme = 'light';
+      localStorage.setItem('theme', 'light');
+    }
+  }else {
+    // localStorage.setItem('theme', false)
+  }
+}
+
+const topBarLeft = topBar.querySelector('.left');
+const changeThemeBtn = document.createElement('a');
+changeThemeBtn.innerHTML = 'Сменить тему';
+changeThemeBtn.classList.add('changeTheme');
+changeThemeBtn.addEventListener('click', changeTheme);
+topBarLeft.innerHTML += ' | ';
+topBarLeft.appendChild(changeThemeBtn);

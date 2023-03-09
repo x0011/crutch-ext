@@ -5,7 +5,8 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
-body{
+
+body[data-theme="dark"]{
   a {
     color: $link;
   }
@@ -328,4 +329,10 @@ body{
       background: $grey600;
       border: none;
     }
+}
+
+.changeTheme {
+  &:hover {
+    cursor: pointer;
+  }
 }
